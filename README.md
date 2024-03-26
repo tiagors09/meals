@@ -36,4 +36,4 @@ flutter run
 
 ## Screenshots
 
-![gif 1](.gif/1.gif)
+![gif 1](.gifs/1.gif)
