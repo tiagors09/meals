@@ -1,6 +1,7 @@
 enum AppRoutes {
   home('/'),
-  categoriesMeals('/categories-meals');
+  categoriesMeals('/categories-meals'),
+  mealDetail('/meal-detail');
 
   const AppRoutes(this.name);
 
