@@ -27,6 +27,7 @@ class Meals extends StatelessWidget {
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         textTheme: ThemeData.light().textTheme.copyWith(
               titleLarge: const TextStyle(
+                color: Colors.black,
                 fontSize: 20,
                 fontFamily: 'RobotoCondensed',
               ),
