@@ -1,16 +1,39 @@
 # meals
 
-A new Flutter project.
+A recipe guide.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter application.
+Make sure you have Flutter installed on your machine. If you don't already have it, you can [install Flutter](https://flutter.dev/docs/get-started/install).
 
-A few resources to get you started if this is your first Flutter project:
+Clone this repository:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+git clone https://github.com/tiagors09/meals.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Then go to the project directory:
+
+```bash
+cd meals
+```
+
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+## Running the Application
+
+Make sure a device (emulator or physical device) is connected and ready.
+
+Run the application:
+
+```bash
+flutter run
+```
+
+## Screenshots
+
+![gif 1](.gif/1.gif)
