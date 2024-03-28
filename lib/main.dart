@@ -16,14 +16,16 @@ class Meals extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = ThemeData();
 
+    var routes = {
+      AppRoutes.home.name: (ctx) => const TabsScreen(),
+      AppRoutes.categoriesMeals.name: (ctx) => const CategoriesMealsScreen(),
+      AppRoutes.mealDetail.name: (ctx) => const MealDetailScreen(),
+      AppRoutes.settings.name: (ctx) => const SettingsScreen(),
+    };
+
     return MaterialApp(
       initialRoute: AppRoutes.home.name,
-      routes: {
-        AppRoutes.home.name: (ctx) => const TabsScreen(),
-        AppRoutes.categoriesMeals.name: (ctx) => const CategoriesMealsScreen(),
-        AppRoutes.mealDetail.name: (ctx) => const MealDetailScreen(),
-        AppRoutes.settings.name: (ctx) => const SettingsScreen(),
-      },
+      routes: routes,
       title: 'Vamos Cozinhar?',
       theme: theme.copyWith(
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
