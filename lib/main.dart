@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meals/screens/categories_meals_screen.dart';
 import 'package:meals/screens/meal_detail_screen.dart';
+import 'package:meals/screens/settings_screen.dart';
 import 'package:meals/screens/tabs_screen.dart';
 import 'package:meals/utils/app_routes.dart';
 
@@ -21,6 +22,7 @@ class Meals extends StatelessWidget {
         AppRoutes.home.name: (ctx) => const TabsScreen(),
         AppRoutes.categoriesMeals.name: (ctx) => const CategoriesMealsScreen(),
         AppRoutes.mealDetail.name: (ctx) => const MealDetailScreen(),
+        AppRoutes.settings.name: (ctx) => const SettingsScreen(),
       },
       title: 'Vamos Cozinhar?',
       theme: theme.copyWith(
