@@ -20,16 +20,24 @@ class TabsScreen extends StatefulWidget {
 class _TabsScreenState extends State<TabsScreen> {
   int _selectedScreenIndex = 0;
 
-  final List<Map<String, Object>> _screens = [
-    {
-      'title': 'Lista de Categorias',
-      'screen': const CategoriesScreen(),
-    },
-    {
-      'title': 'Meus Favoritos',
-      'screen': const FavoriteScreen(),
-    },
-  ];
+  late List<Map<String, Object>> _screens;
+
+  @override
+  void initState() {
+    super.initState();
+    _screens = [
+      {
+        'title': 'Lista de Categorias',
+        'screen': const CategoriesScreen(),
+      },
+      {
+        'title': 'Meus Favoritos',
+        'screen': FavoriteScreen(
+          favoriteMeals: widget.favoriteMeals,
+        ),
+      },
+    ];
+  }
 
   final List<BottomNavigationBarItem> _items = [
     const BottomNavigationBarItem(
