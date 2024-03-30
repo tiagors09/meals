@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals/models/meals.dart';
+import 'package:meals/models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
   const MealDetailScreen({super.key});
@@ -42,6 +42,10 @@ class MealDetailScreen extends StatelessWidget {
     );
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.star),
+        onPressed: () => Navigator.of(context).pop(meal.title),
+      ),
       appBar: AppBar(
         title: Text(meal.title),
       ),
